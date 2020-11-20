@@ -11,10 +11,11 @@
 
 ## How to run:
 	Dockerfile:
-		```shell
-		git clone https://github.com/ampbj/jadidi-ryan-techtask-201120.git
-		cd jadidi-ryan-techtask-201120
-		docker build -t ukufu-lunch-app .
-		docker run -p 5000:5000 -d ukufu-lunch-app
+	
+		```console
+		$: git clone https://github.com/ampbj/jadidi-ryan-techtask-201120.git
+		$: cd jadidi-ryan-techtask-201120
+		$: docker build -t ukufu-lunch-app .
+		$: docker run -p 5000:5000 -d ukufu-lunch-app
 		```
 		Go to http://localhost:5000/lunch
