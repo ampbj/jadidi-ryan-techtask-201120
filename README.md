@@ -16,5 +16,5 @@
 		$ cd jadidi-ryan-techtask-201120
 		$ docker build -t ukufu-lunch-app .
 		$ docker run -p 5000:5000 -d ukufu-lunch-app
-		$ go to http://localhost:5000/lunch
 		```
+		Go to http://localhost:5000/lunch
