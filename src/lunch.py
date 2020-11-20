@@ -18,6 +18,6 @@ class LunchChoices:
                     best_before_expired_ingridiens.add(ingredient['title'])
         usable_recipes = [recipe for recipe in self.recipes["recipes"]
                           if set(recipe["ingredients"]).issubset(usable_ingredients)]
-        usable_recipes.sort(key=lambda recipe: best_before_expired_ingridiens.issubset(
+        usable_recipes.sort(key=lambda recipe: best_before_expired_ingridiens.intersection(
             set(recipe["ingredients"])))
         return usable_recipes

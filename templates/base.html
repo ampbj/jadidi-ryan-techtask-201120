@@ -1,7 +1,11 @@
 <title>Lunch is ready</title>
-<ul style="width: 50%;margin: auto; margin-top: 10%;">
-	<b>Lunch Choices:</b>
-	{% for item in data %}
-		<li><p>{{item.title}}</p> <p>Ingredients:{{item.ingredients}}</p></li>
-	{% endfor %}
-</ul>
+{% if data is defined and data|length > 0%}
+	<ul style="width: 50%;margin: auto; margin-top: 10%;">
+		<b>Lunch Choices:</b>
+			{% for item in data %}
+				<li><p>{{item.title}}</p> <p>Ingredients:{{item.ingredients}}</p></li>
+			{% endfor %}
+	</ul>
+{% else %}
+		<p style="width: 50%;margin: auto; margin-top: 10%;"><b>There is nothing to eat :(</b></p>
+{% endif %}
