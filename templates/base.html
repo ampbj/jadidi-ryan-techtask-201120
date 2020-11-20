@@ -1,0 +1,7 @@
+<title>Lunch is ready</title>
+<ul style="width: 50%;margin: auto; margin-top: 10%;">
+	<b>Lunch Choices:</b>
+	{% for item in data %}
+		<li><p>{{item.title}}</p> <p>Ingredients:{{item.ingredients}}</p></li>
+	{% endfor %}
+</ul>
